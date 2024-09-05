@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Blog</h1>
+    </header>
+
+    <main>
+        <!-- Formulário de Postagem -->
+        <form id="postForm" class="active">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Digite o título do post" required>
+
+            <label for="conteudo">Conteúdo:</label>
+            <textarea id="conteudo" name="conteudo" placeholder="Digite o conteúdo do post" required></textarea>
+
+            <label for="tags">Tags:</label>
+            <input type="text" id="tags" name="tags" placeholder="Digite as tags separadas por vírgula">
+
+            <button type="submit">Publicar</button>
+        </form>
+
+        <!-- Feed de Postagens -->
+        <div id="postFeed" class="feed">
+            <!-- Postagens serão inseridas aqui via JavaScript -->
+        </div>
+
+        <!-- Botões de Navegação -->
+        <div class="container">
+            <button id="viewFeedBtn">Visualizar Feed</button>
+            <button id="createPostBtn" style="display:none;">Criar Post</button>
+        </div>
+    </main>
+
+    <script src="node.js"></script>
+</body>
+</html>
